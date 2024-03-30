@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Encode+Sans:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Encode Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.form {
+    background-color: teal;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(135, 207, 235, 0.3);
+    border-radius: 5px;
+    margin: 10px;
+    color: #111;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+}
+
+.input::placeholder {
+    color: rgba(17, 17, 17, 0.7);
+    font-family: inherit;
+}
+
+.btn {
+    background-color: #111;
+    color: teal;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: inherit;
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
+

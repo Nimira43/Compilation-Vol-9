@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Encode+Sans:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.7)),
+        url('./pexels-anni-roenkae-3219899.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calender {
+    background-color: #222;
+    color: #ccc;
+    width: 450px;
+    height: 520px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.month {
+    width: 100%;
+    height: 120px;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.month h1 {
+    font-size: 30px;
+    font-size: 400;
+    text-transform: uppercase;
+}
+
+.month p {
+    font-size: 16px;
+}
+
+.weekdays {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.weekdays div {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.days div {
+    font-size: 14px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div:hover:not(.empty) {
+    border: 2px solid teal;
+    cursor: pointer;
+}
+
+.today {
+    background-color: teal;
+}
