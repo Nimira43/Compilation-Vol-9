@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Homemade Apple', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.75)),
+        url('./marek-piwnicki-Tn6lu9Y6FnA-unsplash.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar-wrapper {
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress-bar-wrapper h3 {
+    font-size: 5rem;
+    color: darkgoldenrod;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.5rem 3rem rgba(139, 0, 0, 0.795);
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
+
+.change .progress-bar-wrapper h3 {
+    animation: loadingAnim 2s 5;
+}
+
+
+
+@keyframes loadingAnim {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 1;
+    }
+    
+    75% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-bar {
+    width: 100%;
+    height: 3.5rem;
+    border: 0.2rem solid beige;
+    border-radius: 3rem;
+    padding: 0.3rem;
+    margin-bottom: 4rem;
+}
+
+.bar {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        gold,
+        orangered);
+    border-radius: 3rem;
+}
+
+.change .bar {
+    animation: barAnim 10s linear forwards;
+}
+
+@keyframes barAnim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 35%;
+    height: 5.5rem;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: darkgoldenrod;
+    letter-spacing: 0.1rem;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 3rem rgba(20, 0, 0, 0.795);
+    cursor: pointer
+}
+
+.download {
+    background: linear-gradient(
+        to right,
+        black,
+        darkred);
+}
+
+.btn:active {
+    transform: translateY(0.2rem);
+}
+
+.reset {
+    background: linear-gradient(
+        to right,
+        darkred,
+        black);
+}

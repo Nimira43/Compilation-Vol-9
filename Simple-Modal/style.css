@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', sans-serif;
+} 
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Experimental Radial-Gradient Effect */
+
+    background-image: radial-gradient(circle at center, rgb(255, 111, 0), rgb(156, 156, 71), rgb(10, 0, 0));
+    position: relative;
+}
+    
+.btn {
+    margin: 3rem;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 35px;
+    border: 0.1rem dotted khaki;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.75);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: khaki;
+    text-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 23, 23, 0.763);
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.success-btn {
+    background-color: darkcyan;
+}
+
+.fail-btn {
+    background-color:firebrick;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn:active {
+    transform: scale(0.98) translateY(-0.2rem);
+}
+
+.modal {
+    width: 25rem;
+    height: 30rem;
+    background-color: khaki;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.75);
+    border: 0.1rem dotted #222;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open.modal {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.modal-icon {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: -3rem;
+    border-radius: 50%;
+    border: 0.1rem dotted khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-icon i {
+    font-size: 2.5rem;
+    color: khaki;
+}
+
+.success-icon {
+    background-color: darkcyan;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.75);
+}
+
+.fail-icon {
+    background-color: firebrick;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.75);
+}
+
+.modal-top {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-top h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.modal-bottom {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 35px 35px;
+}
+
+.modal-bottom-success {
+    background-color: darkcyan;
+}
+
+.modal-bottom-fail {
+    background-color: firebrick;
+}
+
+.modal-btn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 20px;
+    border: 0.1rem dotted #222;
+    background-color: khaki;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 23, 23, 0.763);
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.75);letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.modal-bottom-success .modal-btn {
+    color: darkcyan;
+}
+
+.modal-bottom-fail .modal-btn {
+    color: firebrick;
+}
+
+.modal-btn:hover {
+    opacity: 0.85;
+}
+    
+.modal-btn:active {
+    transform: scale(0.98) translateY(-0.2rem);
+}
+
