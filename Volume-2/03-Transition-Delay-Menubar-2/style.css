@@ -3,15 +3,13 @@
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7),
+  background: linear-gradient(rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.8)),
-    url('../images/ab.jpg') no-repeat center;
+    url('../images/ab3.jpg') no-repeat center;
   background-size: cover;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Delicious Handrawn', cursive;
+  font-family: 'Solway', serif;
   overflow: hidden;
 }
