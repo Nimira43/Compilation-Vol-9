@@ -28,5 +28,10 @@ a {
   position: relative;
   display: block;
   padding: 15px 30px;
-  
+  text-decoration: none;
+  text-transform: uppercase;
+  color: lightyellow;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #ff4500;
 }
