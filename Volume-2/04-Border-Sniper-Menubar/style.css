@@ -29,4 +29,62 @@ ul li a {
   text-transform: uppercase;
   font-size: 24px;
   color: #ffd700;
+  position: relative;
+  padding: 5px;
+}
+
+a:hover {
+  color: #ff4500;
+}
+
+span:first-child:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-top: 2px solid #ff4500; 
+  border-left: 2px solid #ff4500;
+  transition: 0.2s; 
+}
+
+span:first-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-top: 2px solid #ff4500; 
+  border-right: 2px solid #ff4500;
+  transition: 0.2s; 
+}
+
+span:last-child:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-bottom: 2px solid #ff4500;
+  border-left: 2px solid #ff4500;
+  transition: 0.2s;
+}
+
+span:last-child:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-bottom: 2px solid #ff4500;
+  border-right: 2px solid #ff4500;
+  transition: 0.2s;
 }
