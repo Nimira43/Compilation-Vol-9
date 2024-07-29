@@ -19,3 +19,14 @@ ul {
   padding: 0;
   display: flex;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  position: relative;
+  display: block;
+  padding: 15px 30px;
+  
+}
