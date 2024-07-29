@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Delicious+Handrawn&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Solway:wght@300;400;500;700;800&family=Trade+Winds&family=Wire+One&display=swap');
 
+:root {
+  --oran: #ff4500;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -34,7 +38,7 @@ ul li a {
 }
 
 a:hover {
-  color: #ff4500;
+  color: var(--oran);
 }
 
 span:first-child:before, 
@@ -52,33 +56,33 @@ span:last-child:after {
 span:first-child:before,
 span:first-child:after {
   top: 0;
-  border-top: 2px solid #ff4500;
+  border-top: 2px solid var(--oran);
 }
 
 span:last-child:before,
 span:last-child:after {
   bottom: 0;
-  border-bottom: 2px solid #ff4500;
+  border-bottom: 2px solid var(--oran);
 }
 
 span:first-child:before {
   left: 0;
-  border-left: 2px solid #ff4500;
+  border-left: 2px solid var(--oran);
    
 }
 
 span:first-child:after {
   right: 0;
-  border-right: 2px solid #ff4500;
+  border-right: 2px solid var(--oran);
    
 }
 
 span:last-child:before {
   left: 0;
-  border-left: 2px solid #ff4500;
+  border-left: 2px solid var(--oran);
 }
 
 span:last-child:after {
   right: 0;
-  border-right: 2px solid #ff4500;
+  border-right: 2px solid var(--oran);
 }
