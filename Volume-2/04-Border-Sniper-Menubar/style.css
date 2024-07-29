@@ -7,11 +7,26 @@ body {
       rgba(0, 0, 0, 0.8)),
     url('../images/fm1.jpg') no-repeat center;
   background-size: cover;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Trade Winds', sans-serif;
+  font-family: 'Trade Winds', cursive;
   overflow: hidden;
+}
+
+ul { 
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px 40px;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #ffd700;
 }
